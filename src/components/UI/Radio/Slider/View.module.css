@@ -1,0 +1,30 @@
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex: 1 1 0%;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 9999px;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    line-height: 32px;
+    text-align: center;
+    height: 32px;
+    transition: color 150ms ease 0s;
+}
+
+.container.disabled, .container.readOnly {
+    color: rgb(171, 173, 186);
+}
+
+.input {
+    position: absolute;
+    display: none;
+}
+
+.label {
+    cursor: pointer;
+    width: 100%;
+}

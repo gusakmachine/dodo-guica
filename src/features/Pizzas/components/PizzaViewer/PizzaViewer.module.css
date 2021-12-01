@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    width: 530px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.container > svg {
+    position: absolute;
+}
+.image {
+    display: block;
+    margin: 20px 0px 0 20px;
+    width: 345px;
+    height: 345px;
+    transition: all 250ms ease-in-out;
+}
+.middleSize > .image {
+    width: 412px;
+    height: 412px;
+}
+.bigSize > .image {
+    width: 490px;
+    height: 490px;
+}
