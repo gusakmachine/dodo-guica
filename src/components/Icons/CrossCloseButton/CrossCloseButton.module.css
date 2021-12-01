@@ -1,0 +1,7 @@
+.closeButton {
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out 0s;
+}
+.closeButton:hover {
+    transform: scale(1.11);
+}

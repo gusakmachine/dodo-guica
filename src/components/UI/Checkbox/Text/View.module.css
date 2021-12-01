@@ -1,0 +1,44 @@
+.text {
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    background: transparent;
+    border: none;
+    margin: 0px;
+    padding: 2px 0px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+}
+
+.icon {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 3px;
+}
+
+.isChecked .activate {
+    display: none;
+}
+.isNotChecked .activate {
+    display: inline-block;
+}
+.isChecked .deactivate {
+    display: inline-block;
+}
+.isNotChecked .deactivate {
+    display: none;
+}
+.isChecked .text {
+    border-bottom: 1px dashed rgb(92, 99, 112);
+}
+.isNotChecked .text {
+    text-decoration: line-through;
+}
+.disabled, .readOnly .icon {
+    display: none;
+}
+.disabled, .readOnly .text {
+    border-bottom: none;
+}

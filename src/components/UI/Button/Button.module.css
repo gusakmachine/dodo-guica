@@ -1,0 +1,62 @@
+.button {
+    outline: none;
+    border: none;
+    border-radius: 9999px;
+    text-align: center;
+    font-family: Dodo, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 500;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    transition-property: background-color, color;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+}
+
+.button[data-size="small"] {
+    height: 32px;
+    padding: 8px 16px;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.button[data-size="medium"] {
+    height: 40px;
+    padding: 8px 20px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.button[data-size="big"] {
+    height: 48px;
+    padding: 12px 24px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.button[data-size="big"] {
+    width: 100%;
+}
+
+.button[data-color="white"] {
+    background-color: rgb(243, 243, 247);
+    color: rgb(92, 99, 112);
+}
+.button[data-color="white"]:hover {
+    color: rgb(0, 0, 0);
+}
+
+.button[data-color="orange"] {
+    background-color: rgb(255, 105, 0);
+    color: rgb(255, 255, 255);
+}
+.button[data-color="orange"]:hover {
+    background-color: rgb(232, 97, 0);
+    color: rgb(255, 255, 255);
+}
+
+.button[data-color="light-yellow"] {
+    background-color: rgb(255, 210, 179);
+    color: rgb(209, 87, 0);
+}

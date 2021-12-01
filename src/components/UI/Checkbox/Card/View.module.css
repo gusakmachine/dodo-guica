@@ -1,0 +1,88 @@
+.container {
+    box-sizing: border-box;
+    touch-action: manipulation;
+    position: relative;
+    height: 166px;
+    width: calc(33.3333% - 8px);
+    box-shadow: rgba(6, 5, 50, 0.12) 0px 4px 20px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    font: inherit;
+    margin: 0px 8px 8px 0px;
+    padding: 8px;
+    background: rgb(255, 255, 255);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-image: initial;
+    border-radius: 12px;
+    flex-flow: column;
+    transition: box-shadow 150ms ease-out 0s, border;
+}
+
+.label {
+    cursor: pointer;
+}
+.img {
+    width: 90px;
+    flex: 0 0 auto;
+}
+.title {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 12px;
+    line-height: 16px;
+    height: 32px;
+    flex: 1 0 auto;
+    margin: 0px;
+    display: block;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+    overflow: hidden;
+    text-align: center;
+}
+.description {
+    display: block;
+    font-size: 16px;
+    line-height: 20px;
+    flex: 0 0 auto;
+    margin: 4px;
+    text-align: center;
+}
+
+.checkedIcon {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    opacity: 0;
+    transition: opacity 150ms ease-out 0s;
+}
+.checkedIcon > path {
+    fill: rgb(255, 105, 0);
+}
+
+.readOnly, .disabled {
+    background: none;
+    box-shadow: none;
+    border: 1px solid rgb(226, 226, 233);
+    color: rgb(171, 173, 186);
+}
+.readOnly, .disabled .img {
+    opacity: 0.2;
+}
+
+.isChecked .checkedIcon {
+    opacity: 1;
+}
+.isChecked {
+    box-shadow: rgb(6 5 50 / 12%) 0px 0px 0px;
+    border: 1px solid rgb(255, 105, 0);
+}
+.isNotChecked:hover {
+    box-shadow: rgb(6 5 50 / 12%) 0px 0px 8px;
+}
+.isNotChecked:focus {
+    color: rgb(0, 0, 0);
+    outline: none;
+}

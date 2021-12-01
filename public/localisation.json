@@ -1,0 +1,44 @@
+{
+  "ru": {
+    "PIZZAS": {
+        "PIZZA": "Пицца",
+        "PIZZA_FROM": "от",
+        "COLLECT": "Собрать",
+        "DOUGH": "тесто",
+        "CENTIMETERS": "см",
+        "GRAMS": "г",
+        "CURRENCY": "₽",
+        "ENERGY_VALUE": "ккал",
+        "HALF_PIZZA_DESCRIPTION": "Выберите пиццы для левой и правой половинки",
+        "HALF_PIZZA_CONSTRUCTOR": "Конструктор",
+        "HALF_PIZZA_SELECT_LEFT_SIDE": "Выберите левую половинку",
+        "HALF_PIZZA_SELECT_RIGHT_SIDE": "Выберите правую половинку",
+        "ADDITIONAL_ADD_TO_PIZZA": "Добавить в пиццу",
+        "NUTRITIONAL_VALUE": "Пищевая ценность",
+        "ENERGY_VALUE_TITLE": "Энерг. ценность",
+        "PROTEIN_TITLE": "Белки",
+        "FATS_TITLE": "Жиры",
+        "CARBOHYDRATES_TITLE": "Углеводы",
+        "WEIGHT_TITLE": "Вес",
+        "DIAMETER_TITLE": "Диаметр",
+        "ADD_TO_CART": "Добавить в корзину",
+        "FOR": "за",
+        "CHOOSE_THE_LEFT_SIDE_ERROR": "Выберите левую половинку",
+        "CHOOSE_THE_RIGHT_SIDE_ERROR": "Выберите правую половинку"
+    },
+    "CART": {
+      "CART_EMPTY_TITLE": "Ой, пусто!",
+      "CART_EMPTY_DESCRIPTION": "Ваша корзина пуста, откройте «Меню» и выберите понравившийся товар.",
+      "CART_EMPTY_MIN_DELIVERY_PRICE": "Мы доставим ваш заказ от 716 ₽",
+      "CART_EMPTY_COMEBACK_TO_MENU": "Вернуться в меню",
+      "ORDER_ON": "Заказать на",
+      "TOTAL": "Всего"
+    },
+    "HEADER": {
+      "MOSCOW": "Москва",
+      "CART": "Корзина",
+      "PIZZA_DELIVERY": "Доставка пиццы",
+      "MINUTES": "мин"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.container {
+    border-radius: 9999px;
+    background-color: rgb(243, 243, 247);
+    height: 32px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}

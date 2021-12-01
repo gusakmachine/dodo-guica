@@ -1,0 +1,29 @@
+.window {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.modal {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    align-items: flex-start;
+}
+.background {
+    position: fixed;
+    background: black;
+    opacity: 0;
+    transition: opacity 150ms ease 0s;
+    will-change: opacity;
+}
+
+:global(.visible).modal {
+    width: 100vw;
+    height: 100vh;
+}
+:global(.visible) .background {
+    opacity: 0.55;
+    width: 100%;
+    height: 100%;
+}

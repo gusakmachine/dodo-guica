@@ -1,0 +1,55 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    color: rgb(92, 99, 112);
+}
+
+.constructor {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.constructor > .preview {
+    position: relative;
+    left: 8px;
+    top: 1px;
+    height: 256px;
+    width: 256px;
+}
+
+.half {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.right {
+    left: 50%;
+    border-left: 1px solid white;
+}
+
+.half picture {
+    position: relative;
+    left: 24px;
+    width: 256px;
+    height: 256px;
+    object-fit: contain;
+    margin-left: 0;
+    min-width: auto !important;
+    max-width: none !important;
+}
+
+.right picture {
+    margin-left: -176px;
+}
+
+.pizzaImage {
+    width: 256px;
+}

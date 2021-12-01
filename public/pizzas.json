@@ -1,0 +1,756 @@
+{
+  "homemade": {
+    "_id": "627fc96f5935df4635e684ed",
+    "name": "homemade",
+    "pizza": {
+      "_id": "62752c4e623e26a703837e74",
+      "title": "Домашняя",
+      "price": 1.2,
+      "energy_value": 0.9,
+      "fats": 0.6,
+      "protein": 0.3,
+      "carbohydrates": 0.1,
+      "weight": 1
+    },
+    "preview": {
+      "description": "Пикантная пепперони, ветчина, маринованные огурчики, томаты, моцарелла, томатный соус",
+      "image": "https://dodopizza-a.akamaihd.net/static/Img/Products/cb1f5b4207df4d0f967e2d2c9c6da8ba_584x584.jpeg",
+      "price": "984"
+    },
+    "form": "DefaultPizza",
+    "details": {
+      "optional": {
+        "cheddar_and_parmesan": {
+          "_id": "626fe5d0647b0bcda2048f49",
+          "name": "Чеддер и пармезан",
+          "price": 0.189,
+          "energy_value": 0.6,
+          "fats": 0.2,
+          "protein": 0.1,
+          "carbohydrates": 0.7,
+          "weight": 1,
+          "image": "https://dodopizza-a.akamaihd.net/static/Img/Ingredients/000D3A22FA54A81411E9AFA69C1FE796"
+        },
+        "spicy_jalapeno": {
+          "_id": "626fe5d0647b0bcda2048f47",
+          "name": "Острый халапеньо",
+          "price": 0.79,
+          "energy_value": 0.45,
+          "fats": 0.4,
+          "protein": 0.1,
+          "carbohydrates": 0.5,
+          "weight": 1,
+          "image": "https://dodopizza-a.akamaihd.net/static/Img/Ingredients/000D3A22FA54A81411E9AFA5E376B4DF"
+        }
+      },
+      "sizes": {
+        "small": {
+          "_id": "626fdd33647b0bcda2048f03",
+          "name": "Маленькая",
+          "diameter": 35,
+          "weight": 600
+        },
+        "middle": {
+          "_id": "626fdd33647b0bcda2048f04",
+          "name": "Средняя",
+          "diameter": 40,
+          "weight": 800
+        },
+        "big": {
+          "_id": "626fdd33647b0bcda2048f05",
+          "name": "Большая",
+          "diameter": 45,
+          "weight": 1000
+        }
+      },
+      "doughs": {
+        "thin": {
+          "_id": "626fdc2b647b0bcda2048efb",
+          "name": "Тонкое",
+          "weight": 100
+        },
+        "traditional": {
+          "_id": "626fdc50647b0bcda2048efd",
+          "name": "Традиционное",
+          "weight": 200
+        }
+      },
+      "additional": {
+        "cheese_side": {
+          "_id": "626fe5d0647b0bcda2048f48",
+          "name": "Сырный бортик",
+          "price": 0.79,
+          "energy_value": 0.9,
+          "fats": 0.6,
+          "protein": 0.2,
+          "carbohydrates": 0.2,
+          "weight": 1,
+          "image": "https://dodopizza-a.akamaihd.net/static/Img/Ingredients/bd896a42a5b44169ae9dfdc2573c34f2.png"
+        }
+      }
+    },
+    "presets": {
+      "sizes": {
+        "middle": {
+          "checked": true
+        }
+      },
+      "optional": {
+        "spicy_jalapeno": {
+          "readOnly": true,
+          "checked": true
+        },
+        "cheddar_and_parmesan": {
+          "checked": true
+        }
+      },
+      "doughs": {
+        "traditional": {
+          "checked": true
+        }
+      }
+    },
+    "actions": {
+      "isSmall": {
+        "updateIngredientsByWeight": {
+          "spicy_jalapeno": 30,
+          "cheddar_and_parmesan": 30,
+          "cheese_side": 30
+        }
+      },
+      "isMiddle": {
+        "updateIngredientsByWeight": {
+          "spicy_jalapeno": 40,
+          "cheddar_and_parmesan": 40,
+          "cheese_side": 40
+        }
+      },
+      "isBig": {
+        "updateIngredientsByWeight": {
+          "spicy_jalapeno": 50,
+          "cheddar_and_parmesan": 50,
+          "cheese_side": 50
+        }
+      }
+    },
+    "branches": {
+      "isThin": {
+        "additional": {
+          "cheese_side": {
+            "disabled": true,
+            "checked": false
+          }
+        }
+      },
+      "isSmall": {
+        "viewer": {
+          "src": "https://dodopizza-a.akamaihd.net/static/Img/Products/cb1f5b4207df4d0f967e2d2c9c6da8ba_584x584.jpeg"
+        },
+        "doughs": {
+          "thin": {
+            "disabled": true,
+            "checked": false
+          },
+          "traditional": {
+            "checked": true
+          }
+        },
+        "additional": {
+          "cheese_side": {
+            "disabled": true,
+            "checked": false
+          }
+        }
+      },
+      "isMiddleTraditional": {
+        "viewer": {
+          "src": "https://dodopizza-a.akamaihd.net/static/Img/Products/cb1f5b4207df4d0f967e2d2c9c6da8ba_584x584.jpeg"
+        }
+      },
+      "isMiddleThin": {
+        "viewer": {
+          "src": "https://dodopizza-a.akamaihd.net/static/Img/Products/cb1f5b4207df4d0f967e2d2c9c6da8ba_584x584.jpeg"
+        }
+      },
+      "isBigTraditional": {
+        "viewer": {
+          "src": "https://dodopizza-a.akamaihd.net/static/Img/Products/cb1f5b4207df4d0f967e2d2c9c6da8ba_584x584.jpeg"
+        }
+      },
+      "isBigThin": {
+        "viewer": {
+          "src": "https://dodopizza-a.akamaihd.net/static/Img/Products/cb1f5b4207df4d0f967e2d2c9c6da8ba_584x584.jpeg"
+        }
+      }
+    }
+  },
+  "meat_mix": {
+    "_id": "62c40b7b82c19172956ada5c",
+    "name": "meat_mix",
+    "pizza": {
+      "_id": "62c40b7d82c19172956ada5d",
+      "title": "Мясной микс",
+      "price": 0.9,
+      "energy_value": 0.9,
+      "fats": 0.6,
+      "protein": 0.3,
+      "carbohydrates": 0.1,
+      "weight": 1
+    },
+    "preview": {
+      "description": "Пастрами из индейки, острая чоризо, пикантная пепперони, бекон, моцарелла, томатный соус",
+      "image": "https://dodopizza-a.akamaihd.net/static/Img/Products/9853cd63a136490f9bb353d2e0eae59c_584x584.jpeg",
+      "price": "732"
+    },
+    "form": "DefaultPizza",
+    "details": {
+      "optional": {
+        "turkey_pastrami": {
+          "_id": "62c4030a82c19172956ada58",
+          "name": "Пастрами из индейки",
+          "price": 0.189,
+          "energy_value": 0.6,
+          "fats": 0.2,
+          "protein": 0.1,
+          "carbohydrates": 0.7,
+          "weight": 1,
+          "image": "https://dodopizza-a.akamaihd.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png"
+        },
+        "spicy_chorizo": {
+          "_id": "62c4030c82c19172956ada59",
+          "name": "Острая чоризо",
+          "price": 0.189,
+          "energy_value": 0.6,
+          "fats": 0.2,
+          "protein": 0.1,
+          "carbohydrates": 0.7,
+          "weight": 1,
+          "image": "https://dodopizza-a.akamaihd.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png"
+        },
+        "piquant_pepperoni": {
+          "_id": "62c402fb82c19172956ada54",
+          "name": "Пикантная пепперони",
+          "price": 0.189,
+          "energy_value": 0.6,
+          "fats": 0.2,
+          "protein": 0.1,
+          "carbohydrates": 0.7,
+          "weight": 1,
+          "image": "https://dodopizza-a.akamaihd.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png"
+        },
+        "bacon": {
+          "_id": "62c4030182c19172956ada55",
+          "name": "Бекон",
+          "price": 0.189,
+          "energy_value": 0.6,
+          "fats": 0.2,
+          "protein": 0.1,
+          "carbohydrates": 0.7,
+          "weight": 1,
+          "image": "https://dodopizza-a.akamaihd.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png"
+        },
+        "mozzarella": {
+          "_id": "62c4030382c19172956ada56",
+          "name": "Моцарелла",
+          "price": 0.189,
+          "energy_value": 0.6,
+          "fats": 0.2,
+          "protein": 0.1,
+          "carbohydrates": 0.7,
+          "weight": 1,
+          "image": "https://dodopizza-a.akamaihd.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png"
+        },
+        "tomato_sauce": {
+          "_id": "62c4039c82c19172956ada5a",
+          "name": "Томатный соус",
+          "price": 0.189,
+          "energy_value": 0.6,
+          "fats": 0.2,
+          "protein": 0.1,
+          "carbohydrates": 0.7,
+          "weight": 1,
+          "image": "https://dodopizza-a.akamaihd.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png"
+        }
+      },
+      "sizes": {
+        "small": {
+          "_id": "626fdd33647b0bcda2048f03",
+          "name": "Маленькая",
+          "diameter": 35,
+          "weight": 600
+        },
+        "middle": {
+          "_id": "626fdd33647b0bcda2048f04",
+          "name": "Средняя",
+          "diameter": 40,
+          "weight": 800
+        },
+        "big": {
+          "_id": "626fdd33647b0bcda2048f05",
+          "name": "Большая",
+          "diameter": 45,
+          "weight": 1000
+        }
+      },
+      "doughs": {
+        "thin": {
+          "_id": "626fdc2b647b0bcda2048efb",
+          "name": "Тонкое",
+          "weight": 100
+        },
+        "traditional": {
+          "_id": "626fdc50647b0bcda2048efd",
+          "name": "Традиционное",
+          "weight": 200
+        }
+      },
+      "additional": {
+        "creamy_mozzarella": {
+          "_id": "62c4015182c19172956ada51",
+          "name": "Сливочная моцарелла",
+          "price": 0.189,
+          "energy_value": 0.6,
+          "fats": 0.2,
+          "protein": 0.1,
+          "carbohydrates": 0.7,
+          "weight": 1,
+          "image": "https://dodopizza-a.akamaihd.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png"
+        },
+        "cheddar_and_parmesan": {
+          "_id": "626fe5d0647b0bcda2048f49",
+          "name": "Чеддер и пармезан",
+          "price": 0.189,
+          "energy_value": 0.6,
+          "fats": 0.2,
+          "protein": 0.1,
+          "carbohydrates": 0.7,
+          "weight": 1,
+          "image": "https://dodopizza-a.akamaihd.net/static/Img/Ingredients/000D3A22FA54A81411E9AFA69C1FE796"
+        },
+        "spicy_jalapeno": {
+          "_id": "626fe5d0647b0bcda2048f47",
+          "name": "Острый халапеньо",
+          "price": 0.79,
+          "energy_value": 0.45,
+          "fats": 0.4,
+          "protein": 0.1,
+          "carbohydrates": 0.5,
+          "weight": 1,
+          "image": "https://dodopizza-a.akamaihd.net/static/Img/Ingredients/000D3A22FA54A81411E9AFA5E376B4DF"
+        }
+      }
+    },
+    "presets": {
+      "sizes": {
+        "middle": {
+          "checked": true
+        }
+      },
+      "optional": {
+        "turkey_pastrami": {
+          "checked": true
+        },
+        "spicy_chorizo": {
+          "checked": true
+        },
+        "piquant_pepperoni": {
+          "checked": true
+        },
+        "bacon": {
+          "checked": true
+        },
+        "mozzarella": {
+          "readOnly": true,
+          "checked": true
+        },
+        "tomato_sauce": {
+          "readOnly": true,
+          "checked": true
+        }
+      },
+      "doughs": {
+        "traditional": {
+          "checked": true
+        }
+      }
+    },
+    "actions": {
+      "isSmall": {
+        "updateIngredientsByWeight": {
+          "turkey_pastrami": 30,
+          "spicy_chorizo": 30,
+          "piquant_pepperoni": 30,
+          "bacon": 30,
+          "spicy_jalapeno": 30,
+          "mozzarella": 30,
+          "tomato_sauce": 30,
+          "creamy_mozzarella": 30,
+          "cheddar_and_parmesan": 30,
+          "cheese_side": 30
+        }
+      },
+      "isMiddle": {
+        "updateIngredientsByWeight": {
+          "turkey_pastrami": 40,
+          "spicy_chorizo": 40,
+          "piquant_pepperoni": 40,
+          "bacon": 40,
+          "spicy_jalapeno": 40,
+          "mozzarella": 40,
+          "tomato_sauce": 40,
+          "creamy_mozzarella": 40,
+          "cheddar_and_parmesan": 40,
+          "cheese_side": 40
+        }
+      },
+      "isBig": {
+        "updateIngredientsByWeight": {
+          "turkey_pastrami": 50,
+          "spicy_chorizo": 50,
+          "piquant_pepperoni": 50,
+          "bacon": 50,
+          "spicy_jalapeno": 50,
+          "mozzarella": 50,
+          "tomato_sauce": 50,
+          "creamy_mozzarella": 50,
+          "cheddar_and_parmesan": 50,
+          "cheese_side": 50
+        }
+      }
+    },
+    "branches": {
+      "isSmall": {
+        "viewer": {
+          "src": "https://dodopizza-a.akamaihd.net/static/Img/Products/9853cd63a136490f9bb353d2e0eae59c_584x584.jpeg"
+        },
+        "doughs": {
+          "thin": {
+            "disabled": true,
+            "checked": false
+          },
+          "traditional": {
+            "checked": true
+          }
+        }
+      },
+      "isMiddleTraditional": {
+        "viewer": {
+          "src": "https://dodopizza-a.akamaihd.net/static/Img/Products/9853cd63a136490f9bb353d2e0eae59c_584x584.jpeg"
+        }
+      },
+      "isMiddleThin": {
+        "viewer": {
+          "src": "https://dodopizza-a.akamaihd.net/static/Img/Products/9853cd63a136490f9bb353d2e0eae59c_584x584.jpeg"
+        }
+      },
+      "isBigTraditional": {
+        "viewer": {
+          "src": "https://dodopizza-a.akamaihd.net/static/Img/Products/9853cd63a136490f9bb353d2e0eae59c_584x584.jpeg"
+        }
+      },
+      "isBigThin": {
+        "viewer": {
+          "src": "https://dodopizza-a.akamaihd.net/static/Img/Products/9853cd63a136490f9bb353d2e0eae59c_584x584.jpeg"
+        }
+      }
+    }
+  },
+  "white_pepperoni": {
+    "_id": "62c58eb7ba7c6a72e11229bb",
+    "name": "white_pepperoni",
+    "pizza": {
+      "_id": "62c58ebaba7c6a72e11229bc",
+      "title": "Белая пепперони",
+      "price": 0.88,
+      "energy_value": 0.9,
+      "fats": 0.6,
+      "protein": 0.3,
+      "carbohydrates": 0.1,
+      "weight": 1
+    },
+    "preview": {
+      "description": "Пикантная пепперони, соус альфредо, моцарелла",
+      "image": "https://dodopizza-a.akamaihd.net/static/Img/Products/02270e55a3204ccaaf26d75f0c817d28_584x584.jpeg",
+      "price": "716"
+    },
+    "form": "DefaultPizza",
+    "details": {
+      "optional": {
+        "piquant_pepperoni": {
+          "_id": "62c402fb82c19172956ada54",
+          "name": "Пикантная пепперони",
+          "price": 0.189,
+          "energy_value": 0.6,
+          "fats": 0.2,
+          "protein": 0.1,
+          "carbohydrates": 0.7,
+          "weight": 1,
+          "image": "https://dodopizza-a.akamaihd.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png"
+        },
+        "mozzarella": {
+          "_id": "62c4030382c19172956ada56",
+          "name": "Моцарелла",
+          "price": 0.189,
+          "energy_value": 0.6,
+          "fats": 0.2,
+          "protein": 0.1,
+          "carbohydrates": 0.7,
+          "weight": 1,
+          "image": "https://dodopizza-a.akamaihd.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png"
+        },
+        "alfredo_sauce": {
+          "_id": "62c58f11ba7c6a72e11229bd",
+          "name": "Соус альфредо",
+          "price": 0.189,
+          "energy_value": 0.6,
+          "fats": 0.2,
+          "protein": 0.1,
+          "carbohydrates": 0.7,
+          "weight": 1,
+          "image": "https://dodopizza-a.akamaihd.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png"
+        }
+      },
+      "sizes": {
+        "small": {
+          "_id": "626fdd33647b0bcda2048f03",
+          "name": "Маленькая",
+          "diameter": 35,
+          "weight": 600
+        },
+        "middle": {
+          "_id": "626fdd33647b0bcda2048f04",
+          "name": "Средняя",
+          "diameter": 40,
+          "weight": 800
+        },
+        "big": {
+          "_id": "626fdd33647b0bcda2048f05",
+          "name": "Большая",
+          "diameter": 45,
+          "weight": 1000
+        }
+      },
+      "doughs": {
+        "thin": {
+          "_id": "626fdc2b647b0bcda2048efb",
+          "name": "Тонкое",
+          "weight": 100
+        },
+        "traditional": {
+          "_id": "626fdc50647b0bcda2048efd",
+          "name": "Традиционное",
+          "weight": 200
+        }
+      },
+      "additional": {
+        "cheese_side": {
+          "_id": "626fe5d0647b0bcda2048f48",
+          "name": "Сырный бортик",
+          "price": 0.79,
+          "energy_value": 0.9,
+          "fats": 0.6,
+          "protein": 0.2,
+          "carbohydrates": 0.2,
+          "weight": 1,
+          "image": "https://dodopizza-a.akamaihd.net/static/Img/Ingredients/bd896a42a5b44169ae9dfdc2573c34f2.png"
+        },
+        "creamy_mozzarella": {
+          "_id": "62c5b1e963ad08399fa92ceb",
+          "name": "Сливочная моцарелла",
+          "price": 0.189,
+          "energy_value": 0.6,
+          "fats": 0.2,
+          "protein": 0.1,
+          "carbohydrates": 0.7,
+          "weight": 1,
+          "image": "https://dodopizza-a.akamaihd.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png"
+        },
+        "cheddar_and_parmesan": {
+          "_id": "626fe5d0647b0bcda2048f49",
+          "name": "Чеддер и пармезан",
+          "price": 0.189,
+          "energy_value": 0.6,
+          "fats": 0.2,
+          "protein": 0.1,
+          "carbohydrates": 0.7,
+          "weight": 1,
+          "image": "https://dodopizza-a.akamaihd.net/static/Img/Ingredients/000D3A22FA54A81411E9AFA69C1FE796"
+        },
+        "spicy_jalapeno": {
+          "_id": "626fe5d0647b0bcda2048f47",
+          "name": "Острый халапеньо",
+          "price": 0.79,
+          "energy_value": 0.45,
+          "fats": 0.4,
+          "protein": 0.1,
+          "carbohydrates": 0.5,
+          "weight": 1,
+          "image": "https://dodopizza-a.akamaihd.net/static/Img/Ingredients/000D3A22FA54A81411E9AFA5E376B4DF"
+        }
+      }
+    },
+    "presets": {
+      "sizes": {
+        "middle": {
+          "checked": true
+        }
+      },
+      "optional": {
+        "piquant_pepperoni": {
+          "checked": true
+        },
+        "mozzarella": {
+          "readOnly": true,
+          "checked": true
+        },
+        "alfredo_sauce": {
+          "readOnly": true,
+          "checked": true
+        }
+      },
+      "doughs": {
+        "traditional": {
+          "checked": true
+        }
+      }
+    },
+    "actions": {
+      "isSmall": {
+        "updateIngredientsByWeight": {
+          "cheese_side": 30,
+          "piquant_pepperoni": 30,
+          "mozzarella": 30,
+          "alfredo_sauce": 30,
+          "cheddar_and_parmesan": 30,
+          "spicy_jalapeno": 30,
+          "creamy_mozzarella": 30
+        }
+      },
+      "isMiddle": {
+        "updateIngredientsByWeight": {
+          "cheese_side": 40,
+          "piquant_pepperoni": 40,
+          "mozzarella": 40,
+          "alfredo_sauce": 40,
+          "cheddar_and_parmesan": 40,
+          "spicy_jalapeno": 40,
+          "creamy_mozzarella": 40
+        }
+      },
+      "isBig": {
+        "updateIngredientsByWeight": {
+          "cheese_side": 50,
+          "piquant_pepperoni": 50,
+          "mozzarella": 50,
+          "alfredo_sauce": 50,
+          "cheddar_and_parmesan": 50,
+          "spicy_jalapeno": 50,
+          "creamy_mozzarella": 50
+        }
+      }
+    },
+    "branches": {
+      "isThin": {
+        "additional": {
+          "cheese_side": {
+            "disabled": true,
+            "checked": false
+          }
+        }
+      },
+      "isSmall": {
+        "viewer": {
+          "src": "https://dodopizza-a.akamaihd.net/static/Img/Products/02270e55a3204ccaaf26d75f0c817d28_584x584.jpeg"
+        },
+        "doughs": {
+          "thin": {
+            "disabled": true,
+            "checked": false
+          },
+          "traditional": {
+            "checked": true
+          }
+        },
+        "additional": {
+          "cheese_side": {
+            "disabled": true,
+            "checked": false
+          }
+        }
+      },
+      "isMiddleTraditional": {
+        "viewer": {
+          "src": "https://dodopizza-a.akamaihd.net/static/Img/Products/02270e55a3204ccaaf26d75f0c817d28_584x584.jpeg"
+        }
+      },
+      "isMiddleThin": {
+        "viewer": {
+          "src": "https://dodopizza-a.akamaihd.net/static/Img/Products/02270e55a3204ccaaf26d75f0c817d28_584x584.jpeg"
+        }
+      },
+      "isBigTraditional": {
+        "viewer": {
+          "src": "https://dodopizza-a.akamaihd.net/static/Img/Products/02270e55a3204ccaaf26d75f0c817d28_584x584.jpeg"
+        }
+      },
+      "isBigThin": {
+        "viewer": {
+          "src": "https://dodopizza-a.akamaihd.net/static/Img/Products/02270e55a3204ccaaf26d75f0c817d28_584x584.jpeg"
+        }
+      }
+    }
+  },
+  "half_pizza": {
+    "_id": "62c40b7d82c19172956ada5d",
+    "name": "half_pizza",
+    "pizza": {
+      "_id": "62c40b9482c19172956ada5f",
+      "title": "Пицца из половинок"
+    },
+    "preview": {
+      "description": "Соберите свою пиццу 35 см с двумя разными вкусами",
+      "image": "https://dodopizza-a.akamaihd.net/static/Img/Products/81499f3e70684bd48b4a7e8469c3f66c_584x584.jpeg",
+      "price": "732"
+    },
+    "form": "HalfPizza",
+    "details": {
+      "shorts": {
+        "homemade": {},
+        "meat_mix": {},
+        "white_pepperoni": {}
+      },
+      "sizes": {
+        "big": {
+          "_id": "62c40b0582c19172956ada5b",
+          "name": "Большая 35 см",
+          "diameter": 35,
+          "weight": 800
+        }
+      },
+      "doughs": {
+        "thin": {
+          "_id": "626fdc2b647b0bcda2048efb",
+          "name": "Тонкое",
+          "weight": 100
+        },
+        "traditional": {
+          "_id": "626fdc50647b0bcda2048efd",
+          "name": "Традиционное",
+          "weight": 200
+        }
+      }
+    },
+    "presets": {
+      "sizes": {
+        "big": {
+          "checked": true
+        }
+      },
+      "doughs": {
+        "traditional": {
+          "checked": true
+        }
+      }
+    }
+  }
+}
